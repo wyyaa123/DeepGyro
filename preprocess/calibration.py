@@ -12,14 +12,14 @@ scaling = 0.5
 # Camera intrinsics [fx 0 cx; 0 fy cy; 0 0 1] at
 # the original resolution.
 K = np.array([[1558.6899, 0, 939.6533],
-			  [0, 1558.6899, 518.4131],
-			  [0, 0, 1]])
-			  
+              [0, 1558.6899, 518.4131],
+              [0, 0, 1]])
+
 # Rotation from IMU frame to camera frame. 
 # Obtained using the Android documentation.
 Ri = np.array([[0, 1, 0],
-			   [1, 0, 0],
-			   [0, 0, 1]])
+               [1, 0, 0],
+               [0, 0, 1]])
 
 # Camera readout time (rolling shutter skew) in seconds. The 
 # time difference between the first and last row exposure. Can 
